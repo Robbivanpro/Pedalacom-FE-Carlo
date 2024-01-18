@@ -1,0 +1,64 @@
+
+<!-- HERO -->
+
+<section id="hero">
+
+  <h2>Super value deals</h2>
+  <h1>On all products</h1>
+  <p>trade in offer</p>
+
+</section>
+
+
+<!--PRODUCTS-->
+<button class="btn btn-success" (click)="NavigaSingolo()">Inserisci Prodotto</button>
+
+<input type="text" style="color:black"class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" [(ngModel)]="searchText" placeholder="Cerca per nome">
+<section id="product1" class="section-p1">
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Descrizione</th>
+      <th>Prezzo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pd of requestservice.list | ricerca:searchText">
+      <td>{{pd.name}}</td>
+      <td>{{pd.color}}</td>
+      <td>{{pd.listPrice}}$</td>
+      <button class="btn btn-success" (click)="viewProductDetails(pd.productId)">Clicca qui </button>
+      <button class="btn btn-success" (click)="addToCarrello(pd.productId,5)"></button>
+    </tr>
+  </tbody>
+</table>
+ <!--
+  <div class="pro-container">
+      <div class="card">
+          <div class="card-img"><div class="img"></div></div>
+          <p class="card-title">product title</p>
+          <h3 class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <p class="card-price"><span>$</span> 123.45</p>
+          <button class="card-btn">
+              <a href="/carrello"><i class="fa-solid fa-cart-shopping fa-xl"></i>
+                  <p>Aggiungi al Carrello</p></a>
+          </button>
+
+      </div>
+
+  </div>
+-->
+</section>
+
+<!-- Pagination -->
+
+<section id="pagination" class="section-p1">
+  <a href="#">1</a>
+  <a href="#">2</a>
+  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+
+
+</section>
+

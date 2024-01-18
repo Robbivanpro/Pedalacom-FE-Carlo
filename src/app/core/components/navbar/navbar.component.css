@@ -1,0 +1,107 @@
+.btn{
+    padding: 10px;
+}
+
+.shopping-cart {
+    padding: 10px;
+    color: black;
+    
+}
+
+.shopping-cart:hover {
+    color: rgb(255, 145, 0);
+
+}
+.d-flex{
+    padding: 10px;
+}
+
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(5, 186, 5);
+    box-shadow: 0 5px 10px rgb(83, 83, 83);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.container-fluid a i{
+    color: white;
+
+}
+
+.navbar .container-fluid a .img  {
+    background-image: url("src\img\LOGO PEDALACOM NEGATIVO.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .container-fluid a i:hover {
+    color: orange;
+    transition: 0.2s ease-in;
+}
+
+.navbar li{
+    list-style: none;
+    position: relative;
+}
+
+.navbar li a {
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3 ease;
+    
+}
+
+
+
+.navbar li a:hover,
+.navbar li a:active {
+    color: rgb(255, 123, 0);
+    
+}
+
+
+.navbar li a:active::after,
+.navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: orange;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.3 ease;
+}
+
+
+
+
+@media (max-width: 799px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0px;
+        height: 100vh;
+        width: 300px;
+        background-color: antiquewhite;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+    }
+
+    #navbar li{
+        margin-bottom: 25px;
+        color: aquamarine;
+    }
+}

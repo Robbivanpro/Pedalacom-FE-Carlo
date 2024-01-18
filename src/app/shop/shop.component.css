@@ -1,0 +1,195 @@
+#hero {
+    background-image: url("src\img\bike-cover-discount.jpg");
+    height: 35vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #hero h4 {
+    padding-bottom: 15px;
+    color: orange;
+  }
+
+  #hero h2{
+    color: white;
+  }
+
+  #hero h1 {
+    color: white;
+  }
+
+  #hero p{
+    color: white;
+  }
+
+  #hero button {
+
+    border: 0 ;
+    border-radius: 6px;
+    padding: 14px 80px 14px 65px;
+    background-repeat: repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  #hero button:hover {
+    background-color: orange;
+  }
+
+
+.btn{
+  margin: 2%;
+
+}
+
+
+#product1 .pro-container .card .card-img{
+  background-image: url("src\img\bici4.jpg");
+}
+
+  #product1 {
+    text-align: center;
+    padding: 30px;
+}
+
+#product1 .card:hover{
+  box-shadow:  10px 10px rgba(0, 0, 0, 0.02);
+  transition: 0.5s ease;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
+}
+
+#product1 .pro{
+    background-image: url("src\img\bici4.jpg");
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+
+    background-size: cover;
+
+}
+
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product .pro img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+
+}
+
+#product1 .pro .des span {
+    color: grey;
+    font-size: 19px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+#product1 .pro .des i{
+    font-size: 14px ;
+    color: rgba(243, 181, 25)
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: large;
+    font-weight: 700;
+    color: green;
+}
+
+#product1 .pro a{
+    color: #1a1a1a;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+}
+
+
+#pagination {
+    text-align: center;
+    padding: 10px;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+thead th {
+  padding: 8px;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #e2e2e2;
+}
+
+tbody td {
+  padding: 8px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+

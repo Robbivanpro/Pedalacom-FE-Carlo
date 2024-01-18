@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><div class="img"></div></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">Prodotti</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneP()" [routerLink]="['/clienti']">Clienti</a>
+        </li>
+        <li class="nav-item active">
+         <!--<a class="nav-link active active" aria-current="page" href="#" (click)="eseguiAzioneS()" [routerLink]="['/shop']">Contatti</a>-->
+        </li>
+
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/registrazione">Registrazione</a></li>
+            <li><a class="dropdown-item" href="/login">Login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" [routerLink]="['/admin/address']">Indirizzi</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+
+    </form>
+
+    <a href="/carrello"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+
+
+  </div>
+
+</nav>
+
+<div>
+</div>

@@ -1,0 +1,51 @@
+<div class="container">
+    <h1 class="mt-3">Lista Indirizzi</h1>
+
+
+    <div class="d-flex justify-content-end mt-3">
+        <a class="btn btn-primary" [routerLink]="['/admin/address/add']">Aggiungi Nuovo</a>
+    </div>
+
+
+
+    <ng-container >
+
+
+        <table class="table table-border mt-3">
+
+
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Indirizzo 1</th>
+                    <th>Indirizzo 2</th>
+                    <th>Città</th>
+                    <th>Stato</th>
+                    <th>Provincia</th>
+                    <th>Codice Postale</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let address of addressService.list ">
+                    <td>{{address.addressId}}</td>
+                    <td>{{address.addressLine1}}</td>
+                    <td>{{address.addressLine2}}</td>
+                    <td>{{address.city}}</td>
+                    <td>{{address.countryRegion}}</td>
+                    <td>{{address.stateProvince}}</td>
+                    <td>{{address.postalCode}}</td>
+                    <td>
+                        <a class="btn btn-light" [routerLink]="['/admin/address',address.addressId]">Modifica</a>
+                        <a class="btn btn-light" (click)="deleteindirizzo(address.addressId)">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+
+
+        </table>
+    </ng-container>
+
+</div>
+
+

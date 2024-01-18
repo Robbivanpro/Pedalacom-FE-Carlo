@@ -1,0 +1,77 @@
+
+<!-- carrello.component.html -->
+
+<div class="container">
+  <header>
+      <h1>Il Tuo Carrello</h1>
+  </header>
+
+  <section class="cart">
+      <div class="product">
+          <img src="src\img\bici1.jpg" alt="">
+          <div class="product-details" *ngFor="let cr of carrelloservice.list">
+
+              <h3>{{cr.productName}}</h3>
+              <p>Quantità: {{cr.quantity}}</p>
+              <p>Costo: {{cr.amount}}$</p>
+              <input type="number" id="Quantità" name="FirstName" [(ngModel)]="cr.quantity" required>
+              <button (click)="updateData(2,cr.productId,cr.quantity)">Aggiungi</button>
+              <button class="remove-button" (click)="deleteindirizzo(cr.productId,2)">Rimuovi</button>
+
+
+          </div>
+
+      </div>
+
+
+      <!-- Aggiungi altri prodotti qui -->
+
+      <div class="total" *ngIf="quantita && totale">
+          <p>Quantità: {{quantita}} </p>
+          <p>Totale : {{totale}}$</p>
+          <a href="/checkout"><button class="checkout-button">Procedi all' ordine</button></a>
+      </div>
+  </section>
+</div>
+
+
+<!-- Da eliminare
+
+<div class="cart-container">
+    <h2>Il Tuo Carrello</h2>
+
+    <div *ngIf="cartItems.length; else emptyCart">
+      <div *ngFor="let item of cartItems" class="cart-item">
+        <span class="item-name">{{ item.name }}</span>
+        <span class="item-quantity"> - Quantità: {{ item.quantity }}</span>
+        <span class="item-price"> - Prezzo: {{ item.price | currency:'EUR':'symbol':'1.2-2' }}</span>
+        <button class="btn btn-success" (click)="removeItem(item)"> Rimuovi</button>
+        <button class="btn btn-success" (click)="increaseQuantity(item)"> +</button>
+        <button class="btn btn-success" (click)="decreaseQuantity(item)"> -</button>
+      </div>
+
+      <div class="cart-total">
+        Totale: {{ calculateTotal() | currency:'EUR':'symbol':'1.2-2' }}
+      </div>
+    </div>
+
+    <div class="add-product-form">
+        <label for="productName">Nome Prodotto:</label>
+        <input type="text" id="productName" [(ngModel)]="newProduct.name" />
+
+        <label for="productQuantity">Quantità:</label>
+        <input type="number" id="productQuantity" [(ngModel)]="newProduct.quantity" />
+
+        <label for="productPrice">Prezzo:</label>
+        <input type="number" id="productPrice" [(ngModel)]="newProduct.price" />
+
+        <button class="btn btn-success" (click)="addProduct()">Aggiungi Prodotto</button>
+      </div>
+    </div>
+
+
+    <ng-template #emptyCart>
+      <p>Il tuo carrello è vuoto.</p>
+    </ng-template>
+
+  -->

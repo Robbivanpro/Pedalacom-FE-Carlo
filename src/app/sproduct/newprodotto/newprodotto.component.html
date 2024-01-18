@@ -1,0 +1,41 @@
+<section id="grid_form">
+<div class="container">
+  <form class="form" #userForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="descr">INSERISCI PRODOTTO</div>
+    <div class="input">
+      <input type="text" id="FirstName" name="FirstName" [(ngModel)]="model.FirstName" required>
+        <label for="name">Nome</label>
+    </div>
+
+    <div class="input">
+        <input type="text" id="LastName" name="LastName" [(ngModel)]="model.LastName" required>     
+        <label for="Cognome">Cognome</label>
+    </div>
+    <div class="input">
+      <input type="text" id="Namestyle" name="Namestyle" [(ngModel)]="model.Namestyle" required>
+      <label for="namestyle">Name Style</label>
+    </div>
+    <div class="input">
+      <input type="number" id="CompanyName" name="CompanyName" [(ngModel)]="model.CompanyName" required>
+      <label for="companyname">Company Name</label>
+  </div>
+  <div class="input">
+    <input type="number" id="Phone" name="listPrice" [(ngModel)]="model.Phone" required>
+    <label for="phone">Telefono</label>
+  </div>
+  <div class="input">
+    <input type="email" id="EmailAddress" name="EmailAddress" [(ngModel)]="model.EmailAddress" required>
+ <label for="e-mail">E-Mail</label>
+  </div>
+  
+
+    <button>Invia</button>
+  </form>
+</div>
+
+
+</section>
+
+
+
+

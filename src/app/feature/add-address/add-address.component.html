@@ -1,0 +1,40 @@
+<div class="container">
+
+
+    <h1 class="mt-3">Aggiungi Nuovo Indirizzo</h1>
+
+
+    <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+        <div class="mt-2">
+            <div class="mt-3">
+                <label class="form-label">Indirizzo 1</label>
+                <input type="text" id="addressLine1" class="form-control" name="addressLine1" [(ngModel)]="model.addressLine1">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Indirizzo 2</label>
+                <input type="text" id="addressLine2" class="form-control" name="addressLine2" [(ngModel)]="model.addressLine2">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Città</label>
+                <input type="text" id="city" class="form-control" name="city" [(ngModel)]="model.city">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Stato</label>
+                <input type="text" id="stateProvince" class="form-control" name="stateProvince" [(ngModel)]="model.stateProvince">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Regione</label>
+                <input type="text" id="countryRegion" class="form-control" name="countryRegion" [(ngModel)]="model.countryRegion">
+            </div>
+            <div class="mt-3">
+                <label class="form-label">Codice Postale</label>
+                <input type="text" id="postalCode" class="form-control" name="postalCode" [(ngModel)]="model.postalCode">
+            </div>
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Salva</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+<app-image-selector></app-image-selector>

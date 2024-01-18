@@ -1,0 +1,22 @@
+<!--<button class="btn btn-success" (click)="NavigaSingolo()">Inserisci Prodotto</button>
+<section id="product1" class="section-p1"> -->
+
+    <input type="text" style="color:black" [(ngModel)]="ricercaText" placeholder="Cerca per nome">
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Company</th>
+          <th>Titolo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pd of clientiservice.list">
+          <td>{{pd.firstName}}</td>
+          <td>{{pd.companyName}}</td>
+          <td>{{pd.title}}$</td>
+          <button class="btn btn-success" (click)="viewCustomerDetails(pd.customerId)">Clicca qui </button>
+        </tr>
+      </tbody>
+    </table>
+  

@@ -1,0 +1,219 @@
+
+
+
+<section id="Total_page">
+
+<!-- HERO SECTION -->
+
+<section id="hero">
+    <h4>Trade in offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>trade in offer</p>
+    <button>Acquista Ora</button>
+</section>
+
+
+<!-- VETRINA PRODOTTI -->
+
+<section id="feature">
+    <div class="card-container">
+    <div class="card_o">
+        <div class="image">
+            <img src="" alt=""></div>
+          <span class="title">Cool Chair</span>
+          <span class="price">$100</span>
+        </div>
+    <div class="card_o">
+    <div class="image image2"><span class="text"></span></div>
+          <span class="title">Cool Bike</span>
+          <span class="price">$100</span>
+    </div>
+    <div class="card_o">
+    <div class="image image3"><span class="text"></span></div>
+          <span class="title">Cool Bike</span>
+          <span class="price">$100</span>
+    </div>
+    <div class="card_o">
+    <div class="image image4"><span class="text"></span></div>
+          <span class="title">Cool Bike</span>
+          <span class="price">$100</span>
+    </div>
+    <div class="card_o">
+        <div class="image image5"><span class="text"></span></div>
+            <span class="title">Cool Bike</span>
+            <span class="price">$200</span>
+        </div>
+</div>
+
+</section>
+
+<!--PRODUCTS-->
+
+<section id="product1" class="section-p1">
+    <h2>Vetrina Prodotti</h2>
+    <p>Collezione 2023</p>
+    <div class="pro-container" onclick="window.location.href='sproduct'">
+        <div class="card" >
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title" *ngIf="responsedata1">{{responsedata1.name}}</div>
+            <div class="card-subtitle" *ngIf="responsedata1">{{responsedata1.color}}</div>
+            <div class="card-footer">
+                <div class="card-price" *ngIf="responsedata1"><span>$</span> {{responsedata1.standardCost}}</div>
+                <button class="card-btn">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title" *ngIf="responsedata2">{{responsedata2.name}}</div>
+            <div class="card-subtitle" *ngIf="responsedata2">{{responsedata2.color}}</div>
+            <div class="card-footer">
+                <div class="card-price" *ngIf="responsedata2"><span>$</span> {{responsedata2.standardCost}}</div>
+                <button class="card-btn">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title" *ngIf="responsedata3">{{responsedata3.name}}</div>
+            <div class="card-subtitle" *ngIf="responsedata3">{{responsedata3.color}}</div>
+            <div class="card-footer">
+                <div class="card-price" *ngIf="responsedata3"><span>$</span> {{responsedata3.standardCost}}</div>
+                <button class="card-btn">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title" *ngIf="responsedata4">{{responsedata4.name}}</div>
+            <div class="card-subtitle" *ngIf="responsedata4">{{responsedata4.color}}</div>
+            <div class="card-footer">
+                <div class="card-price" *ngIf="responsedata4" ><span>$</span>{{responsedata4.standardCost}}</div>
+                <button class="card-btn">
+                    <a href="#"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        
+       
+      
+    </div>
+
+</section>
+
+
+<!--BANNER-->
+
+<section id="banner" class="section-m1">
+    <h2>PEDALACOM</h2>
+    <a href="/shop"><button class="normal">Sfoglia Prodotti</button></a>
+</section>
+
+
+<!--New Arrivals-->
+
+<section id="product1" class="section-p1">
+    <h2>Nuovi Arrivi</h2>
+    <p>Collezione 2023</p>
+    <div class="pro-container">
+        <div class="pro">
+            <img src="" alt="imgn on">
+            <div class="des">
+                <span>TCR</span>
+                <h5>Cannondale</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$5500</h4>
+
+            </div>
+            <a class="cart" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+        </div>
+        <div class="pro">
+            <img src="" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cannondale</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$5500</h4>
+
+            </div>
+            <a class="cart" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+        </div>
+        <div class="pro">
+            <img src="" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cannondale</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$5500</h4>
+
+            </div>
+            <a class="cart" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+        </div>
+        <div class="pro">
+            <img src="" alt="">
+            <div class="des">
+                <span>adidas</span>
+                <h5>Cannondale</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$5500</h4>
+            </div>
+            <a class="cart" href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+        </div>
+    </div>
+
+</section>
+
+
+<!--CTA banners 1-->
+
+<section id="sm-banner" class="section-p1">
+    <div class="banner-box">
+        <h4>Offerte</h4>
+        <h2>....</h2>
+        <span></span>
+        <button class="white">Esplora offerte</button>
+    </div>
+    <div class="banner-box">
+        <h4>Offerte</h4>
+        <h2>....</h2>
+        <span></span>
+        <button class="white">Esplora offerte</button>
+    </div>
+
+
+
+<!-- NEWSLETTER -->
+
+<section id="newsletter" class="section-m1">
+    <div class="newstext">
+        <h4>Iscriviti alla Newsletter</h4>
+        <p>Ricevi aggiornamenti sulle <span> ultime offerte </span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="La tua E-Mail">
+        <button class="normal">Iscriviti</button>
+    </div>
+
+</section>
+</section>
+

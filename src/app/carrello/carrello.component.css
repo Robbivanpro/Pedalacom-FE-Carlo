@@ -1,0 +1,65 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+
+.product {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border: 1px solid #ccc;
+    transition: background-color 0.2s ease-in; 
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    height: 27vh;
+}
+
+.product:hover {
+    background-color:orange;
+    color: white; 
+    transform: scale(1.1);
+}
+
+.product img {
+    max-width: 100px;
+    margin-right: 10px;
+    background-image: url("src\img\bici3.jpg");
+    background-size: cover;
+}
+
+.product-details {
+    flex-grow: 1;
+}
+
+.remove-button {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.checkout-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}

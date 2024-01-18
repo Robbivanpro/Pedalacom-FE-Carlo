@@ -1,0 +1,103 @@
+
+
+<!-- Single Product Details -->
+
+<section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+        <div class="img-internal">
+
+            <img src="" id="MainImg" alt="">
+        </div>
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="src\img\bici2.jpg" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="" class="small-img" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="" class="small-img" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <div  *ngIf="responsedata">
+         <p>Nome:<strong> {{responsedata.name}}</strong></p>
+         <p>Colore: <strong> {{responsedata.color}}</strong></p>
+         <p>Prezzo: <strong>{{responsedata.listPrice}}$</strong></p>
+
+        <h6>Seleziona Modello: </h6>
+        <select >
+            <option></option>
+            <option>22''</option>
+            <option>24''</option>
+            <option>26''</option>
+            <option>28''</option>
+            <option>30''</option>
+        </select>
+        <input type="number" value="1">
+        <button type="button" class="btn btn-light">Aggiungi al Carrello</button>
+        <h4>Dettagli prodotto</h4>
+        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi voluptas amet temporibus at reiciendis repellat, maxime dolor quod. Vel facere nisi nihil doloremque temporibus dolorem delectus iure? Doloremque, tenetur ullam.</span>
+    </div>
+
+
+
+
+<section id="product1" class="section-p1">
+    <h2>Continua la ricerca</h2>
+    <p>Collezione 2023</p>
+    <div class="pro-container">
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title">Product title</div>
+            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 123.45</div>
+                <button class="card-btn">
+                    <a href="/carrello"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title">Product title</div>
+            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 123.45</div>
+                <button class="card-btn">
+                    <a href="/carrello"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img"></div></div>
+            <div class="card-title">Product title</div>
+            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 123.45</div>
+                <button class="card-btn">
+                    <a href="/carrello"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-img"><div class="img">
+            </div></div>
+            <div class="card-title">Product title</div>
+            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+            <div class="card-footer">
+                <div class="card-price"><span>$</span> 123.45</div>
+                <button class="card-btn">
+                    <a href="/carrello"><i class="fa-solid fa-cart-shopping fa-xl"></i></a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
